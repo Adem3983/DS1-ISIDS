@@ -1,14 +1,8 @@
 const Project = require("../models/Project");
 
-<<<<<<< HEAD
-// *******
-//   CREATE PROJECT
-// *******
-=======
 // *********************
 //   CREATE PROJECT
 // *********************
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.createProject = async (req, res) => {
   try {
     const { nom, description, statut } = req.body;
@@ -30,16 +24,9 @@ exports.createProject = async (req, res) => {
   }
 };
 
-
-<<<<<<< HEAD
-// *******
-//   GET MY PROJECTS
-// *******
-=======
 // *********************
 //   GET MY PROJECTS
 // *********************
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.getMyProjects = async (req, res) => {
   try {
     // njibou ken projets mta3 user li connecté
@@ -52,16 +39,9 @@ exports.getMyProjects = async (req, res) => {
   }
 };
 
-
-<<<<<<< HEAD
-// *******
-//  GET ALL PROJECTS (manager ONLY)
-// *******
-=======
 // *********************
 //  GET ALL PROJECTS (manager ONLY)
 // *********************
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.getAllProjects = async (req, res) => {
   try {
     // ken manager ynejjem ychouf kol projets
@@ -74,16 +54,9 @@ exports.getAllProjects = async (req, res) => {
   }
 };
 
-
-<<<<<<< HEAD
-// *******
-//       UPDATE PROJECT
-// *******
-=======
 // *********************
 //       UPDATE PROJECT
 // *********************
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.updateProject = async (req, res) => {
   try {
     const id = req.params.id;
@@ -98,16 +71,9 @@ exports.updateProject = async (req, res) => {
   }
 };
 
-
-<<<<<<< HEAD
-// *******
-//       DELETE PROJECT
-// *******
-=======
 // *********************
 //       DELETE PROJECT
 // *********************
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.deleteProject = async (req, res) => {
   try {
     const id = req.params.id;
@@ -121,16 +87,9 @@ exports.deleteProject = async (req, res) => {
   }
 };
 
-
-<<<<<<< HEAD
-// *******
-//   SEARCH PROJECTS
-// *******
-=======
 // *********************
 //   SEARCH PROJECTS
 // *********************
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.searchProjects = async (req, res) => {
   try {
     const { q } = req.query;
@@ -145,8 +104,4 @@ exports.searchProjects = async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: "Erreur serveur", err });
   }
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)

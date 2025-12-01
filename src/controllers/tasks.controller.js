@@ -1,14 +1,8 @@
 const Task = require("../models/Task");
 
-<<<<<<< HEAD
-// *******
-//   CREATE TASK
-// *******
-=======
 // *********************
 //   CREATE TASK
 // *********************
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.createTask = async (req, res) => {
   try {
     const { titre, description, statut, deadline, projet } = req.body;
@@ -31,16 +25,9 @@ exports.createTask = async (req, res) => {
   }
 };
 
-
-<<<<<<< HEAD
-// *******
-//   GET TASKS BY PROJECT
-// *******
-=======
 // *********************
 //   GET TASKS BY PROJECT
 // *********************
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.getTaskByProject = async (req, res) => {
   try {
     const projectId = req.params.projetId;
@@ -54,16 +41,9 @@ exports.getTaskByProject = async (req, res) => {
   }
 };
 
-
-<<<<<<< HEAD
-// *******
-//   UPDATE TASK
-// *******
-=======
 // *********************
 //   UPDATE TASK
 // *********************
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.updateTask = async (req, res) => {
   try {
     const id = req.params.id;
@@ -77,16 +57,9 @@ exports.updateTask = async (req, res) => {
   }
 };
 
-
-<<<<<<< HEAD
-// *******
-//   DELETE TASK
-// *******
-=======
 // *********************
 //   DELETE TASK
 // *********************
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.deleteTask = async (req, res) => {
   try {
     const id = req.params.id;
@@ -100,16 +73,9 @@ exports.deleteTask = async (req, res) => {
   }
 };
 
-
-<<<<<<< HEAD
-// *******
-//   ASSIGN TASK (manager ONLY)
-// *******
-=======
 // *********************
 //   ASSIGN TASK (manager ONLY)
 // *********************
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.assignTask = async (req, res) => {
   try {
     const taskId = req.params.id;
@@ -128,16 +94,9 @@ exports.assignTask = async (req, res) => {
   }
 };
 
-
-<<<<<<< HEAD
-// *******
-//   SEARCH TASKS
-// *******
-=======
 // *********************
 //   SEARCH TASKS
 // *********************
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.searchTasks = async (req, res) => {
   try {
     const { q } = req.query;
@@ -151,8 +110,5 @@ exports.searchTasks = async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: "Erreur serveur", err });
   }
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
+
