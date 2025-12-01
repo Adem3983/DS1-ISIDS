@@ -2,9 +2,15 @@ const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
+<<<<<<< HEAD
 // *******
 //      REGISTER
 // *******
+=======
+// *********************
+//      REGISTER
+// *********************
+>>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.register = async (req, res) => {
   try {
     const { nom, login, password, role } = req.body;
@@ -38,9 +44,15 @@ exports.register = async (req, res) => {
 };
 
 
+<<<<<<< HEAD
 // *******
 //        LOGIN
 // *******
+=======
+// *********************
+//        LOGIN
+// *********************
+>>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
 exports.login = async (req, res) => {
   try {
     const { login, password } = req.body;
@@ -78,4 +90,8 @@ exports.login = async (req, res) => {
   } catch (err) {
     return res.status(500).json({ message: "Erreur serveur", error: err });
   }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 7a52a08 (Routes + quelques autres petits modifications)
