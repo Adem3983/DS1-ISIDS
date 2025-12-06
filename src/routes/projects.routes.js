@@ -4,7 +4,7 @@ const controller = require("../controllers/projects.controller");
 const auth = require("../middlewares/authJwt");
 const manager = require("../middlewares/role");
 
-// création projet (user ou manager)
+// nasn3ou projet (user ou manager)
 router.post("/", auth, controller.createProject);
 
 // mes projets

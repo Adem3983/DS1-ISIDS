@@ -11,7 +11,7 @@ module.exports = (req, res, next) => {
   }
 
   try {
-    // nfaskhou le mot "Bearer "
+    // nfaskhou le mot "Bearer" bech ne5thou e token e s7i7
     const realToken = token.split(" ")[1];
 
     // nverifyiw token b secret key
@@ -20,7 +20,7 @@ module.exports = (req, res, next) => {
     // nkhaliw userId disponible f les controllers
     req.userId = decoded.id;
 
-    // n3adew lel étape el jeya
+    // net3adew lel étape el jeya
     next();
   } catch (err) {
     return res.status(401).json({ message: "Token non valide" });

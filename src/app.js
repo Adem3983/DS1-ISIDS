@@ -3,10 +3,10 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 
-// Charger variables d'environnement
+// bch nchargiow les variables d'environnement
 dotenv.config();
 
-// Connexion à MongoDB
+// nconnectiow m3a MongoDB
 connectDB();
 
 const app = express();
@@ -17,17 +17,17 @@ app.use(cors());
 // Parser JSON (express l'implémente directement)
 app.use(express.json());
 
-// Route test
+// Route mta3 test
 app.get("/", (req, res) => {
   res.send("API Express + MongoDB fonctionne 🎉");
 });
 
-// Routes API
+// les routes mtaa les API
 app.use("/api/auth", require("./routes/auth.routes"));
 app.use("/api/projects", require("./routes/projects.routes"));
 app.use("/api/tasks", require("./routes/tasks.routes"));
 
-// Lancer serveur
+// nlansiw serveur
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`🚀 Serveur démarré sur le port ${PORT}`);

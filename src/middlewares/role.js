@@ -11,12 +11,12 @@ module.exports = async (req, res, next) => {
       return res.status(404).json({ message: "Utilisateur introuvable" });
     }
 
-    // ken role mouch manager → mouch mesmo7lou
+    // ken role mouch manager → maandouch l ha9 
     if (user.role !== "manager") {
       return res.status(403).json({ message: "Accès refusé (manager uniquement)" });
     }
 
-    // kenhou manager → n3adew lel étape elli ba3dha
+    // kenou manager → n3adew lel étape elli ba3dha
     next();
 
   } catch (err) {

@@ -26,12 +26,12 @@ exports.register = async (req, res) => {
       role   // par défaut "user"
     });
 
-    await user.save();
-
+    await user.save(); // nsajlouh fel base de donnée
+    // nraj3ou msg de succés 
     return res.status(201).json({ 
-      message: "Utilisateur créé avec succès" 
+      message: "Utilisateur créé avec succès"  
     });
-
+    // nraj3ou msg d'erreur
   } catch (err) {
     return res.status(500).json({ message: "Erreur serveur", error: err });
   }

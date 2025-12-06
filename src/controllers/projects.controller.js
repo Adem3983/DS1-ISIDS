@@ -15,7 +15,7 @@ exports.createProject = async (req, res) => {
       proprietaire: req.userId
     });
 
-    await project.save();
+    await project.save(); // nsajlou projet
 
     res.status(201).json({ message: "Projet créé", project });
 

@@ -1,7 +1,7 @@
 const Task = require("../models/Task");
 
 // *********************
-//   CREATE TASK
+//   nasn3ou task
 // *********************
 exports.createTask = async (req, res) => {
   try {
@@ -13,7 +13,7 @@ exports.createTask = async (req, res) => {
       statut,
       deadline,
       projet,
-      assigne: null
+      assigne: null // mafamech assignation mel louel 
     });
 
     await task.save();
@@ -42,7 +42,7 @@ exports.getTaskByProject = async (req, res) => {
 };
 
 // *********************
-//   UPDATE TASK
+//   naamlou mise a jour lel TASK
 // *********************
 exports.updateTask = async (req, res) => {
   try {
@@ -58,7 +58,7 @@ exports.updateTask = async (req, res) => {
 };
 
 // *********************
-//   DELETE TASK
+//   nfasskhou task
 // *********************
 exports.deleteTask = async (req, res) => {
   try {
@@ -95,7 +95,7 @@ exports.assignTask = async (req, res) => {
 };
 
 // *********************
-//   SEARCH TASKS
+//   nlawjou ala task 
 // *********************
 exports.searchTasks = async (req, res) => {
   try {
